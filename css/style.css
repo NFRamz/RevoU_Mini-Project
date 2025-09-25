@@ -1,0 +1,291 @@
+    :root {
+        --primary-color: #007BFF;
+        --dark-color: #333;
+        --light-color: #f4f4f4;
+        --grey-color: #555;
+        --white-color: #fff;
+        --border-color: #ddd;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.6;
+        color: var(--dark-color);
+        background-color: var(--white-color);
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    h1, h2 {margin-bottom: 20px;}
+
+    section {padding: 60px 0;}
+
+    .page {display: none;}
+
+
+    /* Header and Navigation */
+    .header {
+        background-color: var(--white-color);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+    }
+
+    .nav-image-logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: var(--dark-color);
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {color: var(--primary-color);}
+
+    .navMenuButtonForMobile {
+        display: none;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--dark-color);
+    }
+
+    /* Welcome Section */
+    .welcome-section {
+        background-color: var(--light-color);
+        text-align: center;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .welcome-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .headquarters-section {
+        text-align: center;
+    }
+
+    .locations {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .location-circle {
+        width: 150px;
+        height: 150px;
+        border: 3px solid var(--border-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 18px;
+        transition: all 0.3s ease;
+    }
+
+    .location-circle:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        border-color: var(--primary-color);
+    }
+
+    .portfolio-section {text-align: center;}
+
+
+
+    .message-us-section {background-color: var(--light-color);}
+
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        background: var(--white-color);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .form-group {margin-bottom: 20px;}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="date"],
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .radio-group {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .radio-group input[type="radio"] {margin-right: 5px;}
+
+    .submit-btn {
+        width: 100%;
+        padding: 12px;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {background-color: #0056b3;}
+
+    .form-output {
+        background-color: var(--dark-color);
+        color: var(--white-color);
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .form-output p {
+        margin-bottom: 10px;
+        word-wrap: break-word;
+    }
+
+    /* Profile Page: Banner */
+    .banner-section {
+        height: 40vh;
+        background-image: url('https://placehold.co/1920x1080/007BFF/FFFFFF?text=Naufal+Ramzi');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white-color);
+        text-align: center;
+
+    }
+
+    .banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .banner-section h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    /* Profile Page: Content */
+    .profile-content {padding: 60px 0;}
+
+    .profile-card {
+        background: var(--white-color);
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .profile-card h2 {color: var(--primary-color);}
+
+    /* Footer */
+    .footer {
+        background-color: var(--dark-color);
+        color: var(--white-color);
+        text-align: center;
+        padding: 20px 0;
+    }
+
+
+
+    @media (max-width: 768px) {
+        .nav-menu {
+            position: fixed;
+            left: -100%;
+            top: 70px;
+            flex-direction: column;
+            background-color: var(--white-color);
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-menu.active {left: 0;}
+
+        .nav-item {padding: 1.5rem 0;}
+
+        .navMenuButtonForMobile {display: block;}
+
+        .navMenuButtonForMobile.active .bar:nth-child(2) {opacity: 0;}
+
+        .navMenuButtonForMobile.active .bar:nth-child(1) {transform: translateY(8px) rotate(45deg);}
+
+        .navMenuButtonForMobile.active .bar:nth-child(3) {transform: translateY(-8px) rotate(-45deg);}
+
+        .form-container {grid-template-columns: 1fr;}
+
+        .welcome-section h1 {font-size: 2rem;}
+
+        .banner-section h1 {font-size: 2.2rem;}
+    }
+

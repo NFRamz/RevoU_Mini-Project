@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+
+                <a href="index.html">
+                    <img class="nav-image-logo" src="https://th.bing.com/th/id/OIP.m1f0fj2FsfmPgY9qSYyCJwHaHa?w=153&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="logo">
+                </a>
+
+                <button class="navMenuButtonForMobile" id="navMenuButtonForMobile">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <!-- Updated nav links for single-page navigation -->
+                    <li class="nav-item"><a href="#" data-page="home-page" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" data-page="profile-page" class="nav-link">Our Profile</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#message-us" class="nav-link">Message Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Page Content -->
+        <div id="home-page" class="page">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <div class="container">
+                    <h1>Hi <span id="user-name"></span>, Welcome To Website</h1>
+                    <p>Ini adalah website latihan pertama</p>
+                </div>
+            </section>
+
+            <!-- Headquarters Section -->
+            <section class="headquarters-section">
+                <div class="container">
+                    <h2>Our Headquarter</h2>
+                    <div class="locations">
+                        <div>
+                            <div class="location-circle">
+
+                            </div>
+                            <span>Jakarta</span>
+                        </div>
+
+                        <div>
+                            <div class="location-circle">
+
+                            </div>
+                            <span>Bandung</span>
+                        </div>
+
+                        <div>
+                            <div class="location-circle">
+                            </div>
+                            <span >Surabaya</span>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Section (Placeholder) -->
+            <section id="portfolio" class="portfolio-section">
+                <div class="container">
+                    <h2>Our Portfolio</h2>
+                    <p>Our portfolio is coming soon! Stay tuned for our amazing projects.</p>
+                </div>
+            </section>
+
+            <!-- Message Us Section -->
+            <section id="message-us" class="message-us-section">
+                <div class="container">
+                    <h2>Message Us</h2>
+                    <div class="form-container">
+                        <form id="message-form">
+                            <div class="form-group"><label for="full-name">Nama:</label><input type="text" id="full-name" required></div>
+                            <div class="form-group"><label for="birth-date">Tanggal Lahir:</label><input type="date" id="birth-date" required></div>
+                            <div class="form-group"><label>Jenis Kelamin:</label><div class="radio-group"><input type="radio" id="male" name="gender" value="Laki-Laki" required><label for="male">Laki-Laki</label><input type="radio" id="female" name="gender" value="Perempuan"><label for="female">Perempuan</label></div></div>
+                            <div class="form-group"><label for="message">Pesan:</label><textarea id="message" rows="5" required></textarea></div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                        <div class="form-output">
+                            <p><strong>Current time:</strong> <span id="current-time"></span></p>
+                            <p><strong>Nama:</strong> <span id="output-name"></span></p>
+                            <p><strong>Tanggal Lahir:</strong> <span id="output-birth-date"></span></p>
+                            <p><strong>Jenis Kelamin:</strong> <span id="output-gender"></span></p>
+                            <p><strong>Pesan:</strong> <span id="output-message"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Profile Page Content -->
+        <div id="profile-page" class="page">
+            <!-- Photo Banner Section -->
+            <section class="banner-section">
+                <div class="banner-overlay"><h1>Naufal Ramzi</h1></div>
+            </section>
+
+            <!-- About Us Section -->
+            <section class="profile-content">
+                <div class="container">
+                    <div class="profile-card">
+                        <h2>Tentang Saya</h2>
+                        <p>Saya adalah seorang mahasiswa Teknik Informatika dengan semangat
+                            besar untuk terus belajar dan berkembang di dunia digital. Website
+                            sederhana ini, merupakan wujud dari rasa penasaran dan keinginan saya
+                            untuk menerapkan ilmu yang saya pelajari di bangku kuliah ke dalam sebuah
+                            karya nyata. Setiap baris kode dan setiap desain yang ada di sini adalah
+                            bagian dari perjalanan saya untuk tumbuh dan menjadi lebih baik di bidang ini.</p>
+                    </div>
+                    <div class="profile-card">
+                        <h2>Visi</h2>
+                        <p>
+                            Menjadi seorang praktisi teknologi yang kompeten dan inovatif,
+                            yang mampu menciptakan solusi digital yang tidak hanya canggih
+                            secara teknis, tetapi juga memberikan dampak positif dan kemudahan
+                            bagi orang lain. Saya bercita-cita untuk terus belajar dan beradaptasi,
+                            agar dapat berkontribusi secara nyata dalam perkembangan teknologi di masa depan.
+
+                        </p>
+                    </div>
+                    <div class="profile-card">
+                        <h2>Misi</h2>
+                        <p>Misi saya adalah menjadikan setiap proyek sebagai kesempatan untuk belajar.
+                            Saya berkomitmen untuk selalu memberikan yang terbaik dalam setiap hal yang
+                            saya kerjakan, mulai dari analisis masalah hingga implementasi solusi.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container"><p>Created By Naufal Ramzi</p></div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
